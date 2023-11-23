@@ -1,0 +1,55 @@
+
+<div  class="container">
+    <div  class="section1" style="background-image: url(./assets/images/beautiful-park-city.jpg);">
+    <div class="ptag">
+    <p> Its unique traditions and culture, blended with its varied demography, have transformed Kerala one of the most visited and explored tourist destination in the world.</p>
+    </div>
+    </div>
+
+    <div class="section2">
+        <h1 appHeadingColor>Top Travel Destinations in Kerala</h1>
+        <p >Kerala, known as gods own country is blessed with some extremely beautiful tourist destinations that grab the attention of tourists from all across the globe. It is a land of hill-stations backwaters, commercial cities, hamlets, rich cultures and traditions, and much more to explore. While you may be wondering where to head first in the charming land of Kerala; do not worry, just scroll down to know what all awaits you here!</p>
+    </div>
+    <div class="section3">
+    <div class="section3__sub"><img appImageHover src="./assets/images/shivpuri_uttrak.jpg"  alt="image"></div>
+    <div class="section3__sub"><img appImageHover src="./assets/images/gaurikund_uttrak.jpg"  alt="image"></div>
+    <div class="section3__sub"><img appImageHover src="./assets/images/forest_uttrak.jpg"  alt="image"></div>
+    </div>
+    <div>
+        <h1 appHeadingColor>Top Attractions in Kerala</h1>
+    </div>
+    <div class="section4">
+        <div appBgColor class="section4__sub"><h3>Kerala Backwaters</h3><p> The Kerala backwaters are a chain of brackish lagoons and lakes lying parallel to the Arabian Sea coast are one of the ultimate eye-catching attractions or an important feature of Tourism in Kerala.</p></div>
+        <div appBgColor class="section4__sub"><h3>Kerala Hill Stations</h3><p>Kerala, engulfed by the western Ghat ranges on its eastern border, unarguably has a wonderful collection of hill stations and lot of pleasure to offer</p></div>
+        <div appBgColor class="section4__sub"><h3>Kerala Wildlife </h3><p>Kerala which is often well-known for scenic backwaters, beaches and Ayurveda’s therapy is also bestowed with opulent wildlife that extent above the length and width of Kerala.</p></div>
+    </div>
+    <div class="section4">
+        <div appBgColor class="section4__sub"><h3>Kerala Beaches:</h3><p> Kerala, with an amazing 550 kilometers of coastline on the Arabian Sea has many pleasant or charming beaches and no wonder are a good alternative to Goa.</p></div>
+        <div appBgColor class="section4__sub"><h3>Temples of Kerala</h3><p> Kerala is also known as “Land of Gods” as the land is full of legends & tales and houses several ancient as well as magnificent temples. Some of the temples are 2000 years old.
+
+        </p></div>
+        <div appBgColor class="section4__sub"><h3>Fair and Festivals in Kerala</h3><p> There are many local festivals of Kerala which show the rich and distinct culture of the God's Own Country by mixing cheer, fun and pleasure.</p></div>
+    </div>
+    <div class="section5">
+        <div class="sect5-sub"><p>Thanks for reading.</p>
+            <button appBgColor  (click)="change()">View author</button>
+            <div *ngIf = "dataValue;else closeTable">
+                <ul *ngFor="let item of author">
+                    <li>{{ item.Firstname }}{{ item.Lastname }}</li>
+                </ul>
+            
+            </div>
+            <ng-template #closeTable>
+              
+            </ng-template>
+
+
+
+        
+        </div>
+        <div class="sec5-sub"><textarea name="" id="" cols="30" rows="10" placeholder="write your feedback"></textarea>
+        <br><button appBgColor>Submit</button>
+        </div>
+    </div>
+
+</div>
